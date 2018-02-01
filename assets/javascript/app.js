@@ -65,7 +65,7 @@
 				//  creates div to house rating and gif
 				var topicDiv = $("<div>");
 				// appends in rating
-				topicDiv.append(imageRating);
+				topicDiv.append(imageRating + "<br>");
 				topicDiv.append(topicImage);
 				// then apppends the image to the #gif-view
 				$("#gif-view").append(topicDiv);
