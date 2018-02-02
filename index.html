@@ -17,41 +17,75 @@
 <body>
 
 	<div class="container">
+		<br>
 
-		<div class="row">
-			<div class="col-md-4">
-					<!-- form for user input to add topic -->
-				<form id="topics-form">
-					<label for="add-topics">Add an animal</label>
-					<input type="text" id="topics-input">
-						<br>
-					<!-- submit button adds new topic -->
-					<input type="submit" id="submit-topics" value="Add">
-				</form>
-			</div>
-		
-
-			<div class="col-md-8">
-				<!-- buttons will get put here -->
-				<div id="button-view"></div>
-			</div>
-
+		<!-- Jumbotron -->
+		<div class="jumbotron">
+			<h1 class="text-center">GIF Generator!</h1>
 		</div>
-		
-		
 
-		
-
-
-
-		
-
-
+		<!-- starting row for user entry panel and button panel -->
 		<div class="row">
-			<div class="col-md-2">
-			<div id="gif-view" class="col-md-8"></div>
-			<div class="col-md-2">
-		<div>
+
+			<!-- form for user input to add topic -->
+			<div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Add Buttons To See Animal GIFs</h3>
+					</div>
+					<div class="panel-body">
+						<!-- form for user entry -->
+						<form id="topics-form">
+							<div class="form-group">
+								<label for="add-topics">Enter Animal Below:</label>
+								<input class="form-control" type="text" id="topics-input">
+							</div>
+							<!-- submit button adds new topic -->
+							<input type="submit" id="submit-topics" value="Add">
+						</form>
+					</div>	
+				</div>
+			</div> <!-- closing column div -->
+		
+
+			<!-- buttons will get put here -->
+			<div class="col-md-8">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div id="button-view"></div>
+					</div>
+				</div>
+			</div> <!-- closing column div -->
+
+
+		</div> <!-- closing out row -->
+		
+
+
+		
+		<!-- row for GIFs to be placed -->
+		<div class="row">
+
+			<!-- column for spacing -->
+			<div class="col-md-1"></div>
+
+			<!-- center column for GIFs in panel -->
+			<div class="col-md-10">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div id="gif-view"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- column for spacing -->
+			<div class="col-md-1"></div>
+		
+
+		</div> <!--closing out row -->
+
+
+
 	</div> <!--closing out container -->
 
 

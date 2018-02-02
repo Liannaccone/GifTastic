@@ -1,10 +1,10 @@
-
+//  ***********LOOK AT CODERSBAY EXERCISE FOR BOOTSTRAP HELP
 
 //  VARIABLES
 // ====================
 
 	// initial array of items
-	var topics = ["dog", "pheasant", "duck", "deer", "rabbit", "bird", "vizsla"]
+	var topics = ["dog", "pheasant", "duck", "deer", "rabbit", "bird", "goose", "mallard", "coyote", "cat"]
 
 //  FUNCTIONS
 // =====================
@@ -64,9 +64,18 @@
 				topicImage.addClass("gif");
 				//  creates div to house rating and gif
 				var topicDiv = $("<div>");
-				// appends in rating
-				topicDiv.append(imageRating + "<br>");
+				// add thumbnail attribute to the topicDiv
+				topicDiv.addClass("thumbnail")
+				// creating caption div to add rating caption to thumbnail GIFs
+				var captionDiv = $("<div>");
+				// adding bootstrap caption class to caption div
+				captionDiv.addClass("caption");
+				// adding p tag to captionDivto hold rating caption
+				captionDiv.append("<p><em>Rating:</em> " + imageRating + "</p>");
+				// appends in image & rating to topicDiv
 				topicDiv.append(topicImage);
+				topicDiv.append(captionDiv);
+
 				// then apppends the image to the #gif-view
 				$("#gif-view").append(topicDiv);
 			};

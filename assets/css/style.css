@@ -3,3 +3,14 @@
 button, input {
 	margin:5px;
 }
+
+#gif-view {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.thumbnail {
+	margin-left: 10px;
+	margin-right: 10px;
+}
