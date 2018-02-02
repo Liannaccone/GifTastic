@@ -14,3 +14,26 @@ button, input {
 	margin-left: 10px;
 	margin-right: 10px;
 }
+
+.jumbotron {
+	background-color: #575CB0;
+	color: white;
+}
+
+.panel-body {
+	background-color: #EBEBD3;
+}
+
+.panel-heading {
+	background-color: #F5D76C !important;
+}
+
+.btn:hover, #submit-topics:hover {
+	background-color: #F95738;
+	color: white;
+}
+
+body {
+	background-color: #FCC1B6;
+}
+
